@@ -1,0 +1,13 @@
+create database `oficinageral`;
+
+create table `tabelaCadastroCarros`(
+`idCarro` int not null auto_increment,
+`marcaCarro` varchar(100) not null,
+`placaCarro` varchar (20) not null,
+`proprietarioCarro` varchar (100) not null,
+primary key (`idCarro`)
+);
+
+select * from `tabelaCadastroCarros`;
+
+insert into `tabelaCadastroCarros` (`marcaCarro`, `placaCarro`, `proprietarioCarro`) values ('volkwagen', '123ABC', 'Fernando'), ('Fiat', '423SAQ', 'Marcos');
